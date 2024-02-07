@@ -1,9 +1,9 @@
-import CtaBanner from "../../components/CtaBanner/CtaBanner";
-import FAQ from "../../components/FAQ/FAQ";
-import Hero from "../../components/Hero/Hero";
-import Service from "../../components/Service/Service";
-import Testimonial from "../../components/Testimonials/Testimonial";
-import WhyUs from "../../components/WhyUs/WhyUs";
+import CtaBanner from "../../components/client/CtaBanner";
+import FAQ from "../../components/client/FAQ";
+import Hero from "../../components/client/Hero";
+import Service from "../../components/client/Service";
+import Testimonial from "../../components/client/Testimonial";
+import WhyUs from "../../components/client/WhyUs";
 
 const Home = () => {
   return (

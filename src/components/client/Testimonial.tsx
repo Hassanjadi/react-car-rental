@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
 import Swiper from "swiper";
+import "../../style/landingPage.css";
+import { useEffect, useRef } from "react";
 
 const Testimonial = () => {
   const swiperRef = useRef(null);
@@ -289,9 +290,9 @@ const Testimonial = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-chevron-left"
           >
             <polyline points="15 18 9 12 15 6"></polyline>
@@ -305,9 +306,9 @@ const Testimonial = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-chevron-right"
           >
             <polyline points="9 18 15 12 9 6"></polyline>

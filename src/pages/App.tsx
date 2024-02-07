@@ -3,8 +3,9 @@ import SearchCar from "./Client/SearchCar";
 import Register from "./Register/Register";
 import Login from "./Login/Login";
 import Home from "./Client/Home";
-import Dashboard from "./Admin/Dashboard";
+import Dashboard from "./admin/Dashboard";
 import LayoutClient from "../layout/LayoutClient";
+import LayoutAdmin from "../layout/LayoutAdmin";
 
 function App() {
   return (
@@ -29,7 +30,14 @@ function App() {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route
+            path="/dashboard"
+            element={
+              <LayoutAdmin>
+                <Dashboard />
+              </LayoutAdmin>
+            }
+          />
         </Routes>
       </Router>
     </>

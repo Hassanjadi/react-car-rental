@@ -1,3 +1,5 @@
+import "../../style/landingPage.css";
+
 const CtaBanner = () => {
   return (
     <section id="cta" className="cta">

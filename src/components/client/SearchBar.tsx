@@ -1,3 +1,5 @@
+import "../../style/searchCar.css";
+
 const SearchBar = () => {
   return (
     <section id="search-car" className="search-car">

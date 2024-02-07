@@ -1,6 +1,6 @@
 const WhyUs = () => {
   return (
-    <section id="why-us" className="why-us">
+    <div id="why-us" className="why-us">
       <div className="container">
         <div className="section-title">
           <h2 className="text-lg-start">Why Choose Us?</h2>
@@ -71,7 +71,7 @@ const WhyUs = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

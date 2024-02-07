@@ -1,3 +1,5 @@
+import "../../style/landingPage.css";
+
 const FAQ = () => {
   return (
     <section id="faq" className="faq">

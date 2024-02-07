@@ -1,3 +1,5 @@
+import "../../style/landingPage.css";
+
 const Navbar = () => {
   return (
     <>

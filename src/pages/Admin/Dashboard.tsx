@@ -1,12 +1,9 @@
-import React from 'react'
-import NavbarAdmin from '../../components/NavbarAdmin/NavbarAdmin'
-
 const Dashboard = () => {
   return (
-    <div>
-        <NavbarAdmin />
-    </div>
-  )
-}
+    <>
+      <h1>Ini dashboard cuy!</h1>
+    </>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

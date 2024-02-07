@@ -1,6 +1,6 @@
-import AllCars from "../../components/AllCars/AllCars";
-import Hero from "../../components/Hero/Hero";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import AllCars from "../../components/client/AllCars";
+import Hero from "../../components/client/Hero";
+import SearchBar from "../../components/client/SearchBar";
 
 const SearchCar = () => {
   return (

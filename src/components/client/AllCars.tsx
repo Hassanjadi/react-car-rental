@@ -1,4 +1,4 @@
-import React from "react";
+import "../../style/searchCar.css";
 
 const AllCars = () => {
   return (

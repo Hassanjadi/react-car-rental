@@ -1,3 +1,5 @@
+import "../../style/landingPage.css";
+
 const Service = () => {
   return (
     <section id="service" className="service">

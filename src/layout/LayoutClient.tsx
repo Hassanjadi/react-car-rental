@@ -1,5 +1,5 @@
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/NavbarClient/Navbar";
+import Footer from "../components/client/Footer";
+import Navbar from "../components/client/Navbar";
 
 const LayoutClient = (props: { children: any }) => {
   return (

@@ -1,3 +1,5 @@
+import "../../style/landingPage.css";
+
 const Hero = () => {
   return (
     <section id="hero" className="hero">
