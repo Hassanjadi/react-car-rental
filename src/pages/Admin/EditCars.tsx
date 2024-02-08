@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { Breadcrumb } from "react-bootstrap";
+import FormEditCars from "../../components/admin/FormEditCars";
 
 const EditCars = () => {
   return (
-    <div>EditCars</div>
-  )
-}
+    <>
+      <Breadcrumb>
+        <Breadcrumb.Item href="/list-cars">Cars</Breadcrumb.Item>
+        <Breadcrumb.Item href="/list-cars">List Car</Breadcrumb.Item>
+        <Breadcrumb.Item active>Edit Car</Breadcrumb.Item>
+      </Breadcrumb>
+      <FormEditCars />
+    </>
+  );
+};
 
-export default EditCars
+export default EditCars;

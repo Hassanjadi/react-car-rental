@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SearchCar from "./Client/SearchCar";
+import SearchCar from "./Client/SearchCars";
 import Register from "./Register/Register";
 import Login from "./Login/Login";
 import Home from "./Client/Home";
 import Dashboard from "./admin/Dashboard";
 import LayoutClient from "../layout/LayoutClient";
 import LayoutAdmin from "../layout/LayoutAdmin";
+import AddCars from "./admin/AddCars";
+import EditCars from "./admin/EditCars";
+import ListCars from "./admin/ListCars";
 
 function App() {
   return (
@@ -35,6 +38,30 @@ function App() {
             element={
               <LayoutAdmin>
                 <Dashboard />
+              </LayoutAdmin>
+            }
+          />
+          <Route
+            path="/list-car"
+            element={
+              <LayoutAdmin>
+                <ListCars />
+              </LayoutAdmin>
+            }
+          />
+          <Route
+            path="/add-car"
+            element={
+              <LayoutAdmin>
+                <AddCars />
+              </LayoutAdmin>
+            }
+          />
+          <Route
+            path="/edit-car"
+            element={
+              <LayoutAdmin>
+                <EditCars />
               </LayoutAdmin>
             }
           />

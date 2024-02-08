@@ -1,0 +1,21 @@
+.header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.list {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 16px 0;
+}
+
+.line {
+  width: 4px;
+  height: 24px;
+  background-color: #0d28a6;
+}
+
+th {
+  background-color: #0d28a6;
+}

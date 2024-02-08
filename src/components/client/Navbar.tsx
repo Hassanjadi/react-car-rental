@@ -36,7 +36,7 @@ const Navbar = () => {
                 ></button>
               </div>
 
-              <div className="offcanvas-body py-0">
+              <div className="offcanvas-body d-flex align-items-center py-0">
                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li className="nav-item">
                     <a

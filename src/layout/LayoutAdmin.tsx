@@ -5,17 +5,15 @@ import "../style/layoutAdmin.css";
 
 const LayoutAdmin = (props: { children: any }) => {
   return (
-    <div className="container-fluid layout">
-      <div className="col-md-2 sidebar">
+    <>
+      <div className="col-md-2 side">
         <Sidebar />
       </div>
-      <div className="col-md-10">
-        <div className="navbar">
-          <Navbar />
-        </div>
-        <div className="body">{props.children}</div>
+      <div className="navbar bar">
+        <Navbar />
       </div>
-    </div>
+      <div className="body">{props.children}</div>
+    </>
   );
 };
 

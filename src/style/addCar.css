@@ -1,0 +1,43 @@
+.form-car {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.form-name {
+  gap: 80px;
+}
+
+.form-price {
+  gap: 88px;
+}
+
+.form-desc {
+  gap: 44px;
+}
+
+.form-capacity {
+  gap: 62px;
+}
+
+.form-transmisi {
+  gap: 56px;
+}
+
+.form-year {
+  gap: 92px;
+}
+
+.form-img {
+  gap: 72px;
+}
+
+.cancel {
+  padding: 8px 12px 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #0d28a6;
+  color: #0d28a6;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 700;
+}
