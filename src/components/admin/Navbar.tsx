@@ -1,4 +1,4 @@
-import "../../style/navbarAdmin.css";
+import React from "react";
 
 const NavbarAdmin = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import { Breadcrumb } from "react-bootstrap";
 import FormAddCars from "../../components/admin/FormAddCars";
+import "../../style/dashboard.css";
 
 const AddCars = () => {
   return (

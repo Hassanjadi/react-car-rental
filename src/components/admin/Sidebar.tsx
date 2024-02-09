@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/sidebarAdmin.css";
 import FeatherIcon from "feather-icons-react";
 
 const Sidebar = () => {

@@ -1,14 +1,15 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SearchCar from "./Client/SearchCars";
-import Register from "./Register/Register";
-import Login from "./Login/Login";
-import Home from "./Client/Home";
-import Dashboard from "./admin/Dashboard";
 import LayoutClient from "../layout/LayoutClient";
 import LayoutAdmin from "../layout/LayoutAdmin";
-import AddCars from "./admin/AddCars";
+import Dashboard from "./admin/Dashboard";
 import EditCars from "./admin/EditCars";
 import ListCars from "./admin/ListCars";
+import Register from "./auth/Register";
+import SearchCar from "./client/Cars";
+import AddCars from "./admin/AddCars";
+import Login from "./auth/Login";
+import Home from "./client/Home";
 
 function App() {
   return (
@@ -24,15 +25,13 @@ function App() {
             }
           />
           <Route
-            path="/search-car"
+            path="/cars"
             element={
               <LayoutClient>
                 <SearchCar />
               </LayoutClient>
             }
           />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
           <Route
             path="/dashboard"
             element={
@@ -65,6 +64,8 @@ function App() {
               </LayoutAdmin>
             }
           />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </>

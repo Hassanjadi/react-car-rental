@@ -1,15 +1,17 @@
+import React from "react";
 import AllCars from "../../components/client/AllCars";
-import Hero from "../../components/client/Hero";
+import HeroCars from "../../components/client/HeroCars";
 import SearchBar from "../../components/client/SearchBar";
+import "../../style/cars.css";
 
-const SearchCars = () => {
+const Cars = () => {
   return (
     <>
-      <Hero />
+      <HeroCars />
       <SearchBar />
       <AllCars />
     </>
   );
 };
 
-export default SearchCars;
+export default Cars;

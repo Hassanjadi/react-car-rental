@@ -1,6 +1,5 @@
 import React from "react";
 import FeatherIcon from "feather-icons-react";
-import "../../style/listCars.css";
 import { Link } from "react-router-dom";
 
 const CardCars = () => {

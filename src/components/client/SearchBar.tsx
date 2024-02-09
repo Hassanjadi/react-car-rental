@@ -1,14 +1,14 @@
-import "../../style/searchCar.css";
+import React from "react";
 
 const SearchBar = () => {
   return (
     <section id="search-car" className="search-car">
       <div className="container-md">
         <div className="search-bar flex flex-row">
-          <div className="form-search">
-            <div className="driver">
+          <div className="form-search w-100">
+            <div className="driver w-100">
               <label htmlFor="">Tipe Driver</label>
-              <select className="w-100" id="driver-checkbox">
+              <select id="driver-checkbox">
                 <option value="" disabled selected hidden>
                   Pilih Tipe Driver
                 </option>
@@ -16,11 +16,11 @@ const SearchBar = () => {
                 <option value="false">Tanpa Sopir (Lepas Kunci)</option>
               </select>
             </div>
-            <div className="date">
+            <div className="date w-100">
               <label htmlFor="">Tanggal</label>
               <input id="rent-date-input" className="w-100" type="date" />
             </div>
-            <div className="time">
+            <div className="time w-100">
               <label htmlFor="">Waktu Jemput/Ambil</label>
               <select className="w-100" id="rent-time-input">
                 <option value="" disabled selected hidden>
@@ -41,7 +41,7 @@ const SearchBar = () => {
                 <option value="12:00">12:00 WIB</option>
               </select>
             </div>
-            <div className="names">
+            <div className="names w-100">
               <label htmlFor="">Jumlah Penumpang (optional)</label>
               <input
                 id="passenger-input"

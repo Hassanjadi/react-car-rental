@@ -1,4 +1,4 @@
-import "../../style/landingPage.css";
+import React from "react";
 
 const FAQ = () => {
   return (

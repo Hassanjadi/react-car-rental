@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/admin/Navbar";
 import Sidebar from "../components/admin/Sidebar";
-import "../style/layoutAdmin.css";
+import Navbar from "../components/admin/Navbar";
+import "../style/dashboard.css";
 
 const LayoutAdmin = (props: { children: any }) => {
   return (

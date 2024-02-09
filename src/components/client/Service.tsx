@@ -1,4 +1,4 @@
-import "../../style/landingPage.css";
+import React from "react";
 
 const Service = () => {
   return (

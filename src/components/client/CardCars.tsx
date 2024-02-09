@@ -1,10 +1,12 @@
 import React from "react";
 import FeatherIcon from "feather-icons-react";
-import "../../style/searchCar.css";
 
 const CardCars = () => {
   return (
-    <>
+    <div
+      id="cars-container"
+      className="row w-100 row-cols-md-2 row-cols-lg-3 mx-1"
+    >
       <div className="card col">
         <div className="card-images d-flex justify-content-center align-items-center w-100">
           <img src="#" alt="Images car" className="images-car" />
@@ -19,7 +21,7 @@ const CardCars = () => {
             <span>
               <FeatherIcon icon="users" />
             </span>
-            <p>$2 Orang</p>
+            <p>2 Orang</p>
           </div>
           <div className="d-flex gap-3 justify-content-start">
             <span>
@@ -36,7 +38,7 @@ const CardCars = () => {
         </div>
         <button>Pilih Mobil</button>
       </div>
-    </>
+    </div>
   );
 };
 

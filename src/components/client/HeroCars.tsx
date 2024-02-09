@@ -1,4 +1,5 @@
 import React from "react";
+import FeatherIcon from "feather-icons-react";
 
 const Hero = () => {
   return (
@@ -13,7 +14,12 @@ const Hero = () => {
                 kualitas terbaik dengan harga terjangkau. Selalu siap melayani
                 kebutuhanmu untuk sewa mobil selama 24 jam.
               </p>
-              <a href="/cars">Mulai Sewa Mobil</a>
+              <a href="/" className="d-flex gap-1">
+                <span>
+                  <FeatherIcon icon="arrow-left" size="16" />
+                </span>
+                Kembali
+              </a>
             </div>
           </div>
           <div className="col-md-6 hero-img">

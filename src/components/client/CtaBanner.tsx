@@ -1,4 +1,5 @@
-import "../../style/landingPage.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const CtaBanner = () => {
   return (
@@ -14,7 +15,9 @@ const CtaBanner = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <button>Mulai Sewa Mobil</button>
+              <Link to="/cars" className="mulai-sewa-mobil">
+                Mulai Sewa Mobil
+              </Link>
             </div>
           </div>
         </div>

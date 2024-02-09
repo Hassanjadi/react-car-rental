@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/addCar.css";
 
 const EditCars = () => {
   return (
