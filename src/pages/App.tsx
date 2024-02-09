@@ -41,7 +41,7 @@ function App() {
             }
           />
           <Route
-            path="/list-car"
+            path="/list-cars"
             element={
               <LayoutAdmin>
                 <ListCars />
@@ -49,7 +49,7 @@ function App() {
             }
           />
           <Route
-            path="/add-car"
+            path="/add-cars"
             element={
               <LayoutAdmin>
                 <AddCars />
@@ -57,7 +57,7 @@ function App() {
             }
           />
           <Route
-            path="/edit-car"
+            path="/edit-cars"
             element={
               <LayoutAdmin>
                 <EditCars />

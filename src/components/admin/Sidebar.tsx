@@ -20,23 +20,9 @@ const Sidebar = () => {
         </li>
         {/* Car menu item */}
         <li className="nav-item">
-          <a className="nav-link sidebar-link" href="/list-car">
+          <a className="nav-link sidebar-link" href="/list-cars">
             <FeatherIcon icon="truck" size="20" />
-            Cars
-          </a>
-        </li>
-        {/* Car menu item */}
-        <li className="nav-item">
-          <a className="nav-link sidebar-link" href="/add-car">
-            <FeatherIcon icon="plus-circle" size="20" />
-            Add Car
-          </a>
-        </li>
-        {/* Car menu item */}
-        <li className="nav-item">
-          <a className="nav-link sidebar-link" href="/edit-car">
-            <FeatherIcon icon="edit" size="20" />
-            Edit Car
+            List Cars
           </a>
         </li>
       </ul>

@@ -370,7 +370,7 @@ body {
 
   .all-cars .cars-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
@@ -405,6 +405,12 @@ body {
   .all-cars .cars {
     display: flex;
     align-items: flex-start;
+    gap: 16px;
+  }
+
+  .all-cars .cars-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
 
