@@ -1,5 +1,5 @@
 import React from "react";
-import CardCars from "../../components/admin/CardCars";
+import CardCars from "../../components/client/CardCars";
 import FeatherIcon from "feather-icons-react";
 import { Breadcrumb } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -31,7 +31,15 @@ const ListCars = () => {
           <button className="filter">Medium</button>
           <button className="filter">Large</button>
         </div>
-        <CardCars />
+        <div id="all-cars" className="all-cars">
+          <div className="container-md">
+            <div className="row d-flex justify-content-center">
+              <div className="row cars">
+                <CardCars />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
