@@ -1,5 +1,4 @@
 import React from "react";
-import ListOrder from "../../components/admin/ListOrder";
 import ListCar from "../../components/admin/ListCar";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import "../../style/dashboard.css";
@@ -14,7 +13,6 @@ const Dashboard = () => {
       <div className="header">
         <h1>Dashboard</h1>
       </div>
-      <ListOrder />
       <ListCar />
     </>
   );

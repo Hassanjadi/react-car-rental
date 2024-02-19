@@ -1,5 +1,5 @@
 import React from "react";
-import CardCars from "../../components/client/CardCars";
+import CardCars from "../../components/admin/CardCars";
 import FeatherIcon from "feather-icons-react";
 import { Breadcrumb } from "react-bootstrap";
 import { Link } from "react-router-dom";

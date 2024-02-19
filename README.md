@@ -1,3 +1,21 @@
+# React Typescript Vite (Car Rental)
+
+## Membuat sebuah REST API yang dapat digunakan untuk melakukan manajemen data mobil dengan fitur authentication. Kriteria sebagai berikut:
+
+1. Membuat aplikasi React
+2. Membuat dashboard admin memakai react dan diintegrasikan dengan API yang sudah dibuat
+3. Menyambungkan aplikasi React dengan sebuah backend menggunakan protokol HTTP
+4. Menggunakan React Context dalam manajemen data di dalam aplikasi React
+5. Menggunakan TypeScript sebagai bahasa pemrograman
+
+## Done
+
+- [x] Membuat aplikasi React
+- [x] Membuat dashboard admin memakai react dan diintegrasikan dengan API yang sudah dibuat
+- [x] Menyambungkan aplikasi React dengan sebuah backend menggunakan protokol HTTP
+- [x] Menggunakan React Context dalam manajemen data di dalam aplikasi React
+- [x] Menggunakan TypeScript sebagai bahasa pemrograman
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -17,12 +35,12 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`

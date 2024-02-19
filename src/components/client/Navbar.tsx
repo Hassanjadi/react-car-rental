@@ -7,9 +7,9 @@ const Navbar = () => {
     <header id="header" className="header fixed-top">
       <nav className="navbar navbar-expand-lg bg-transparent">
         <div className="container">
-          <a className="navbar-brand" href="#hero">
+          <Link to="/" className="navbar-brand">
             <img src="https://i.ibb.co/M2f3jKv/Group-43.png" alt="Logos" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler shadow-none border-0 p-0"
             type="button"

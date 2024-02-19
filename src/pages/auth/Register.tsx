@@ -1,14 +1,62 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
 import "../../style/auth.css";
+import axios from "axios";
 
-const Login = () => {
+interface Register {
+  username: string;
+  email: string;
+  password: string;
+}
+
+const Register = () => {
+  let navigate = useNavigate();
+  const [input, setInput] = useState<Register>({
+    username: "",
+    email: "",
+    password: "",
+  });
+
+  const handleInput = (event: { target: { value: any; name: any } }) => {
+    let value = event.target.value;
+    let name = event.target.name;
+
+    setInput({ ...input, [name]: value });
+  };
+
+  const handleRegister = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+
+    let { username, email, password } = input;
+    // console.log(input)
+
+    axios
+      .post("http://localhost:3000/api/v1/register", {
+        username,
+        email,
+        password,
+      })
+      .then((res) => {
+        // console.log(res);
+        let data = res.data;
+        Cookies.set("token", data.token, { expires: 1 });
+        navigate("/login");
+      })
+
+      .catch((error) => {
+        // console.log(error)
+        alert(error.message);
+      });
+  };
   return (
     <div className="signup">
       <div className="col d-flex justify-content-center align-items-center">
         <div>
           <div className="mb-3">
-            <img src="" alt="Logo" />
+            <div className="w-100 mb-3">
+              <img src="https://i.ibb.co/M2f3jKv/Group-43.png" alt="Logo" />
+            </div>
             <h2>Sign Up</h2>
           </div>
           <form>
@@ -17,10 +65,11 @@ const Login = () => {
                 Username
               </label>
               <input
+                value={input.username}
+                onChange={handleInput}
                 type="text"
+                name="name"
                 className="form-control"
-                id="exampleInputUsername"
-                aria-describedby="usernameHelp"
                 placeholder="Nama Lengkap"
               />
             </div>
@@ -29,10 +78,11 @@ const Login = () => {
                 Email
               </label>
               <input
+                value={input.email}
+                onChange={handleInput}
+                name="email"
                 type="email"
                 className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
                 placeholder="Contoh: johndee@gmail.com"
               />
             </div>
@@ -41,9 +91,11 @@ const Login = () => {
                 Password
               </label>
               <input
+                value={input.password}
+                onChange={handleInput}
+                name="password"
                 type="password"
                 className="form-control"
-                id="exampleInputPassword1"
                 placeholder="6+ karakter"
               />
             </div>
@@ -51,9 +103,9 @@ const Login = () => {
           </form>
           <div className="have-account mt-3 d-flex gap-2 justify-content-center">
             <p>Already have an account?</p>
-            <a href="/login" className="text-decoration-none">
+            <Link to="/login" className="text-decoration-none">
               Sign In here
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -70,4 +122,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
