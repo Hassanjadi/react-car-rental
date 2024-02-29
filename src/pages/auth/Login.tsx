@@ -82,6 +82,7 @@ const Login = () => {
                 type={"password"}
                 name="password"
                 className="form-control"
+                placeholder="8+ karakter"
               />
             </div>
             <button type={"submit"}>Submit</button>

@@ -96,7 +96,7 @@ const Register = () => {
                 name="password"
                 type="password"
                 className="form-control"
-                placeholder="6+ karakter"
+                placeholder="8+ karakter"
               />
             </div>
             <button type="submit">Submit</button>
