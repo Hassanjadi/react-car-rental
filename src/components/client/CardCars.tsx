@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FeatherIcon from "feather-icons-react";
 import axios from "axios";
 
@@ -22,7 +22,7 @@ const CardCars = () => {
       .then((res) => {
         setData([...res.data]);
       })
-      .catch((error) => {});
+      .catch(() => {});
   }, []);
 
   console.log(data);

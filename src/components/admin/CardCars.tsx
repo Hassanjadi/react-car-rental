@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -19,7 +19,7 @@ const CardCars = () => {
   const [data, setData] = useState<Car[] | null>(null);
 
   //indikator
-  const [fetchStatus, setFetchStatus] = useState(true);
+  const [] = useState(true);
 
   useEffect(() => {
     axios
@@ -27,7 +27,7 @@ const CardCars = () => {
       .then((res) => {
         setData([...res.data]);
       })
-      .catch((error) => {});
+      .catch((_error: any) => {});
   }, []);
 
   console.log(data);
@@ -35,8 +35,8 @@ const CardCars = () => {
   const handleDelete = (event: any) => {
     let idData = event.target.value;
 
-    axios.delete(`http://localhost:3000/api/v1/cars/${idData}`).then((res) => {
-      setFetchStatus(true);
+    axios.delete(`http://localhost:3000/api/v1/cars/${idData}`).then((_res) => {
+      true;
     });
   };
 

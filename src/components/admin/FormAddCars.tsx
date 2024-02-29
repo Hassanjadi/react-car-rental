@@ -1,14 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
-
-interface Car {
-  name: string;
-  price: string;
-  description: string;
-  capacity: string;
-  transmisi: string;
-  year: string;
-}
+import { useState } from "react";
 
 const FormAddCars = () => {
   const [input, setInput] = useState({
@@ -21,7 +12,7 @@ const FormAddCars = () => {
   });
 
   //indikator
-  const [fetchStatus, setFetchStatus] = useState(true);
+  const [] = useState(true);
 
   //handling input
   const handleInput = (event: { target: { name: any; value: any } }) => {
@@ -66,7 +57,7 @@ const FormAddCars = () => {
       })
       .then((res) => {
         console.log(res);
-        setFetchStatus(true);
+        true;
       });
 
     setInput({

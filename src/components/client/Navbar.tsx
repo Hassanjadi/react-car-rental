@@ -1,4 +1,3 @@
-import React from "react";
 import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
 

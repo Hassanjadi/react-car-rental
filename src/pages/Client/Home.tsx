@@ -1,4 +1,3 @@
-import React from "react";
 import CtaBanner from "../../components/client/CtaBanner";
 import Testimonial from "../../components/client/Testimonial";
 import Service from "../../components/client/Service";

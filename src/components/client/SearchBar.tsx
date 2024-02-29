@@ -1,5 +1,3 @@
-import React from "react";
-
 const SearchBar = () => {
   return (
     <section id="search-car" className="search-car">

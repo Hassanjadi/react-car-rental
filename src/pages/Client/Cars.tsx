@@ -1,4 +1,3 @@
-import React from "react";
 import AllCars from "../../components/client/AllCars";
 import HeroCars from "../../components/client/HeroCars";
 import SearchBar from "../../components/client/SearchBar";

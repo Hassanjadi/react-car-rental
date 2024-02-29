@@ -1,5 +1,3 @@
-import React from "react";
-
 const WhyUs = () => {
   return (
     <div id="why-us" className="why-us">

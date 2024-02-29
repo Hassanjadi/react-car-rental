@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import axios from "axios";
 
@@ -20,7 +20,7 @@ const ListCar = () => {
       .then((res) => {
         setData([...res.data]);
       })
-      .catch((error) => {});
+      .catch(() => {});
   }, []);
 
   console.log(data);

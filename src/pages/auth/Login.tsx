@@ -1,53 +1,7 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
+import { Link } from "react-router-dom";
 import "../../style/auth.css";
-import axios from "axios";
-
-interface Login {
-  email: string;
-  password: string;
-}
 
 const Login = () => {
-  let navigate = useNavigate();
-
-  const [input, setInput] = useState<Login>({
-    email: "",
-    password: "",
-  });
-
-  const handleInput = (event: { target: { value: any; name: any } }) => {
-    let value = event.target.value;
-    let name = event.target.name;
-
-    setInput({ ...input, [name]: value });
-  };
-
-  const handleLogin = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-
-    let { email, password } = input;
-    // console.log(input)
-
-    axios
-      .post("https://dev-example.sanbercloud.com/api/login", {
-        email,
-        password,
-      })
-      .then((res) => {
-        // console.log(res);
-        let data = res.data;
-        Cookies.set("token", data.token, { expires: 1 });
-        navigate("/");
-      })
-
-      .catch((error) => {
-        // console.log(error)
-        alert(error.message);
-      });
-  };
-
   return (
     <div className="login">
       <div className="col d-flex justify-content-center align-items-center">
@@ -64,8 +18,6 @@ const Login = () => {
                 Email
               </label>
               <input
-                value={input.email}
-                onChange={handleInput}
                 type={"text"}
                 name="email"
                 className="form-control"
@@ -77,8 +29,6 @@ const Login = () => {
                 Password
               </label>
               <input
-                value={input.password}
-                onChange={handleInput}
                 type={"password"}
                 name="password"
                 className="form-control"

@@ -20,7 +20,6 @@ const EditCars: React.FC = () => {
     year: "",
   });
 
-  const [fetchStatus, setFetchStatus] = useState<boolean>(true);
   const [currentId, setCurrentId] = useState<number>(-1);
 
   const handleInput = (
@@ -53,7 +52,7 @@ const EditCars: React.FC = () => {
         })
         .then((res) => {
           console.log(res);
-          setFetchStatus(true);
+          true;
         })
         .catch((error) => console.error(error));
     } else {
@@ -66,8 +65,8 @@ const EditCars: React.FC = () => {
           transmisi,
           year,
         })
-        .then((res) => {
-          setFetchStatus(true);
+        .then(() => {
+          true;
         })
         .catch((error) => console.error(error));
     }
@@ -81,23 +80,6 @@ const EditCars: React.FC = () => {
       capacity: "",
       transmisi: "",
       year: "",
-    });
-  };
-
-  const handleEdit = (id: number) => {
-    setCurrentId(id);
-
-    axios.get(`http://localhost:3000/api/v1/cars/${id}`).then((res) => {
-      const data: Car = res.data;
-
-      setInput({
-        name: data.name,
-        price: data.price,
-        description: data.description,
-        capacity: data.capacity,
-        transmisi: data.transmisi,
-        year: data.year,
-      });
     });
   };
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 const NavbarAdmin = () => {
   return (
     <div className="container-fluid">

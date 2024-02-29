@@ -1,54 +1,7 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
+import { Link } from "react-router-dom";
 import "../../style/auth.css";
-import axios from "axios";
-
-interface Register {
-  username: string;
-  email: string;
-  password: string;
-}
 
 const Register = () => {
-  let navigate = useNavigate();
-  const [input, setInput] = useState<Register>({
-    username: "",
-    email: "",
-    password: "",
-  });
-
-  const handleInput = (event: { target: { value: any; name: any } }) => {
-    let value = event.target.value;
-    let name = event.target.name;
-
-    setInput({ ...input, [name]: value });
-  };
-
-  const handleRegister = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-
-    let { username, email, password } = input;
-    // console.log(input)
-
-    axios
-      .post("http://localhost:3000/api/v1/register", {
-        username,
-        email,
-        password,
-      })
-      .then((res) => {
-        // console.log(res);
-        let data = res.data;
-        Cookies.set("token", data.token, { expires: 1 });
-        navigate("/login");
-      })
-
-      .catch((error) => {
-        // console.log(error)
-        alert(error.message);
-      });
-  };
   return (
     <div className="signup">
       <div className="col d-flex justify-content-center align-items-center">
@@ -65,8 +18,6 @@ const Register = () => {
                 Username
               </label>
               <input
-                value={input.username}
-                onChange={handleInput}
                 type="text"
                 name="name"
                 className="form-control"
@@ -78,8 +29,6 @@ const Register = () => {
                 Email
               </label>
               <input
-                value={input.email}
-                onChange={handleInput}
                 name="email"
                 type="email"
                 className="form-control"
@@ -91,8 +40,6 @@ const Register = () => {
                 Password
               </label>
               <input
-                value={input.password}
-                onChange={handleInput}
                 name="password"
                 type="password"
                 className="form-control"
