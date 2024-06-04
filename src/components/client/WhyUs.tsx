@@ -1,3 +1,8 @@
+import iconHour from "../../assets/images/home/icon_24hrs.png";
+import iconPrice from "../../assets/images/home/icon_price.png";
+import iconComplete from "../../assets/images/home/icon_complete.png";
+import iconProfesional from "../../assets/images/home/icon_professional.png";
+
 const WhyUs = () => {
   return (
     <div id="why-us" className="why-us">
@@ -10,10 +15,7 @@ const WhyUs = () => {
           <div className="col-lg-3">
             <div className="whyus-card">
               <div className="whyus-images">
-                <img
-                  src="https://i.ibb.co/TYHgk13/icon-complete.png"
-                  alt="Icon"
-                />
+                <img src={iconComplete} alt="Icon" />
               </div>
               <div className="desc">
                 <h3 className="fw-bold">Mobil Lengkap</h3>
@@ -27,7 +29,7 @@ const WhyUs = () => {
           <div className="col-lg-3">
             <div className="whyus-card">
               <div className="whyus-images">
-                <img src="https://i.ibb.co/7gq8hWM/icon-price.png" alt="Icon" />
+                <img src={iconPrice} alt="Icon" />
               </div>
               <div className="desc">
                 <h3 className="fw-bold">Harga Murah</h3>
@@ -41,7 +43,7 @@ const WhyUs = () => {
           <div className="col-lg-3">
             <div className="whyus-card">
               <div className="whyus-images">
-                <img src="https://i.ibb.co/d2jVbVn/icon-24hrs.png" alt="Icon" />
+                <img src={iconHour} alt="Icon" />
               </div>
               <div className="desc">
                 <h3 className="fw-bold">Layanan 24 Jam</h3>
@@ -55,10 +57,7 @@ const WhyUs = () => {
           <div className="col-lg-3">
             <div className="whyus-card">
               <div className="whyus-images">
-                <img
-                  src="https://i.ibb.co/q0LYsn2/icon-professional.png"
-                  alt="Icon"
-                />
+                <img src={iconProfesional} alt="Icon" />
               </div>
               <div className="desc">
                 <h3 className="fw-bold">Sopir Profesional</h3>

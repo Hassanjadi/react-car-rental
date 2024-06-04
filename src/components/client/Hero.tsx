@@ -1,3 +1,5 @@
+import imageCar from "../../assets/images/home/img_car.png";
+
 const Hero = () => {
   return (
     <section id="hero" className="hero">
@@ -16,11 +18,7 @@ const Hero = () => {
           </div>
           <div className="col-md-6 hero-img">
             <div className="img-car position-absolute bottom-0">
-              <img
-                src="https://i.ibb.co/p2N38qf/img-car.png"
-                alt="image car"
-                className="img-fluid"
-              />
+              <img src={imageCar} alt="image car" className="img-fluid" />
             </div>
           </div>
         </div>

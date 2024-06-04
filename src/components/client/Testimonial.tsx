@@ -1,5 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import FeatherIcon from "feather-icons-react";
+import star from "../../assets/images/home/Star.png";
+import imgPhoto from "../../assets/images/home/img_photo.png";
+import imgPhotoo from "../../assets/images/home/img_photoo.png";
 import "swiper/swiper-bundle.css";
 import "swiper/bundle";
 
@@ -29,18 +32,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/Wy5gkZf/img-photo.png"
-                alt="img-photo"
-              />
+              <img src={imgPhoto} alt="img-photo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,18 +55,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/gyQGKvQ/img-photoo.png"
-                alt="img-photoo"
-              />
+              <img src={imgPhotoo} alt="img-photoo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -81,18 +78,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/Wy5gkZf/img-photo.png"
-                alt="img-photo"
-              />
+              <img src={imgPhoto} alt="img-photo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -107,18 +101,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/gyQGKvQ/img-photoo.png"
-                alt="img-photoo"
-              />
+              <img src={imgPhotoo} alt="img-photoo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -133,18 +124,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/Wy5gkZf/img-photo.png"
-                alt="img-photo"
-              />
+              <img src={imgPhoto} alt="img-photo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -159,18 +147,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/gyQGKvQ/img-photoo.png"
-                alt="img-photoo"
-              />
+              <img src={imgPhotoo} alt="img-photoo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -185,18 +170,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/Wy5gkZf/img-photo.png"
-                alt="img-photo"
-              />
+              <img src={imgPhoto} alt="img-photo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -211,18 +193,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/gyQGKvQ/img-photoo.png"
-                alt="img-photoo"
-              />
+              <img src={imgPhotoo} alt="img-photoo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -237,18 +216,15 @@ const Testimonial = () => {
         <SwiperSlide>
           <div className="card-testimonial">
             <div className="images-testi d-flex justify-content-center">
-              <img
-                src="https://i.ibb.co/Wy5gkZf/img-photo.png"
-                alt="img-photo"
-              />
+              <img src={imgPhoto} alt="img-photo" />
             </div>
             <div className="desc-testi">
               <div className="rating d-flex justify-content-center">
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
-                <img src="https://i.ibb.co/K03ffxL/Star.png" alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
+                <img src={star} alt="Star" />
               </div>
               <p>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

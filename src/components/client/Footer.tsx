@@ -1,4 +1,5 @@
 import FeatherIcon from "feather-icons-react";
+import logo from "../../assets/images/home/logo.png";
 
 const Footer = () => {
   return (
@@ -48,7 +49,7 @@ const Footer = () => {
           <div className="copyright col-lg-3 col-md-6">
             <p>Copyright Binar 2022</p>
             <div>
-              <img src="https://i.ibb.co/M2f3jKv/Group-43.png" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </div>
           </div>
         </div>

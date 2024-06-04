@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
 import "../../style/auth.css";
+import { Link } from "react-router-dom";
+import logo from "../../assets/images/home/logo.png";
+import desktop from "../../assets/images/home/desktop.png";
 
 const Login = () => {
   return (
@@ -8,7 +10,7 @@ const Login = () => {
         <div>
           <div className="mb-3">
             <div className="w-100 mb-3">
-              <img src="https://i.ibb.co/M2f3jKv/Group-43.png" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </div>
             <h2>Welcome Back?</h2>
           </div>
@@ -48,10 +50,7 @@ const Login = () => {
 
       <div className="bg-images col d-none d-xl-block">
         <div className="images">
-          <img
-            src="https://i.ibb.co/wh9JWZm/Landing-page-Desktop.png"
-            alt="Landing-page-Desktop"
-          />
+          <img src={desktop} alt="Landing-page-Desktop" />
         </div>
       </div>
     </div>

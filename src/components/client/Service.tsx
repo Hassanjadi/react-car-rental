@@ -1,3 +1,6 @@
+import imageService from "../../assets/images/home/img_service.png";
+import checklist from "../../assets/images/home/checklist.png";
+
 const Service = () => {
   return (
     <section id="service" className="service">
@@ -5,7 +8,7 @@ const Service = () => {
         <div className="row">
           <div className="col-lg-6 p-lg-5 d-flex justify-content-center">
             <img
-              src="https://i.ibb.co/BBBRNzy/img-service.png"
+              src={imageService}
               alt="image our service"
               className="service-images img-fluid p-3"
             />
@@ -20,46 +23,31 @@ const Service = () => {
             </p>
             <div className="d-flex gap-3">
               <div className="service-desc">
-                <img
-                  src="https://i.ibb.co/WDBW38X/checklist.png"
-                  alt="checklist"
-                />
+                <img src={checklist} alt="checklist" />
               </div>
               <p>Sewa Mobil Dengan Supir di Ponorogo 12 Jam</p>
             </div>
             <div className="d-flex gap-3">
               <div className="service-desc">
-                <img
-                  src="https://i.ibb.co/WDBW38X/checklist.png"
-                  alt="checklist"
-                />
+                <img src={checklist} alt="checklist" />
               </div>
               <p>Sewa Mobil Lepas Kunci di Ponorogo 24 Jam</p>
             </div>
             <div className="d-flex gap-3">
               <div className="service-desc">
-                <img
-                  src="https://i.ibb.co/WDBW38X/checklist.png"
-                  alt="checklist"
-                />
+                <img src={checklist} alt="checklist" />
               </div>
               <p>Sewa Mobil Jangka Panjang Bulanan</p>
             </div>
             <div className="d-flex gap-3">
               <div className="service-desc">
-                <img
-                  src="https://i.ibb.co/WDBW38X/checklist.png"
-                  alt="checklist"
-                />
+                <img src={checklist} alt="checklist" />
               </div>
               <p>Gratis Antar - Jemput Mobil di Bandara</p>
             </div>
             <div className="d-flex gap-3">
               <div className="service-desc">
-                <img
-                  src="https://i.ibb.co/WDBW38X/checklist.png"
-                  alt="checklist"
-                />
+                <img src={checklist} alt="checklist" />
               </div>
               <p>Layanan Airport Transfer / Drop In Out</p>
             </div>
