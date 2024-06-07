@@ -1,12 +1,18 @@
 import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Cars } from "./components/pages/Cars.jsx";
+import { Home } from "./components/pages/Home.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello Cars!</div>,
+    element: <Home />,
+  },
+  {
+    path: "/cars",
+    element: <Cars />,
   },
 ]);
 
