@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FormLogin } from "../Fragment/FormLogin";
 import logo from "../../assets/images/home/logo.png";
 import desktop from "../../assets/images/home/desktop.png";
 
-export const AuthLayout = () => {
+export const AuthLayout = (props) => {
+  const { children, title, type } = props;
+
   return (
     <div className="login">
       <div className="col d-flex justify-content-center align-items-center">
@@ -13,14 +14,26 @@ export const AuthLayout = () => {
             <div className="w-100 mb-3">
               <img src={logo} alt="Logo" />
             </div>
-            <h3>Welcome Back?</h3>
+            <h3>{title}</h3>
           </div>
-          <FormLogin />
+          {children}
           <div className="have-account mt-3 d-flex gap-2 justify-content-center">
-            <p>Don’t have an account?</p>
-            <Link to="/register" className="text-decoration-none">
-              Sign Up for free
-            </Link>
+            <p>
+              {" "}
+              {type === "login"
+                ? "Don’t have an account?"
+                : "Do you have an account?"}
+            </p>
+            {type === "login" && (
+              <Link to="/register" className="text-decoration-none">
+                Sign Up for free
+              </Link>
+            )}
+            {type === "register" && (
+              <Link to="/login" className="text-decoration-none">
+                Sign In for free
+              </Link>
+            )}
           </div>
         </div>
       </div>
