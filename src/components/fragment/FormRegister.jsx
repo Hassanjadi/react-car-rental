@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../Element/Button";
 import { InputForm } from "../Element/Input/Index";
 
 export const FormRegister = () => {
@@ -22,7 +23,7 @@ export const FormRegister = () => {
         name="password"
         placeholder="6+ Karakter"
       />
-      <button type={"submit"}>Submit</button>
+      <Button classname="btn-login">Register</Button>
     </form>
   );
 };
