@@ -32,7 +32,7 @@ form input::placeholder {
   line-height: 18px;
 }
 
-form button {
+form .btn-login {
   display: flex;
   width: 100%;
   padding: 8px 12px;
