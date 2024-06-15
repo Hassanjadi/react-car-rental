@@ -1,6 +1,17 @@
 import React from "react";
+import { useCarFilter } from "../../context/CarsFilterContext";
 
 export const SearchBar = () => {
+  const { passengerFilter, setPassengerFilter, applyFilter } = useCarFilter();
+
+  const handleFilterChange = (e) => {
+    setPassengerFilter(e.target.value);
+  };
+
+  const handleFilterClick = () => {
+    applyFilter();
+  };
+
   return (
     <section id="search-car" className="search-car">
       <div className="container-md">
@@ -46,15 +57,20 @@ export const SearchBar = () => {
               <input
                 id="passenger-input"
                 className="input-field w-100"
-                type="text"
+                type="number"
+                value={passengerFilter}
+                onChange={handleFilterChange}
                 placeholder="Jumlah Penumpang"
+                min="1"
               />
               <div className="input-icon">
                 <i className="user" data-feather="users"></i>
               </div>
             </div>
             <div className="button">
-              <button id="filter-btn">Cari mobil</button>
+              <button id="filter-btn" onClick={handleFilterClick}>
+                Cari mobil
+              </button>
             </div>
           </div>
         </div>
