@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { Home } from "./pages/Home.jsx";
 import { Login } from "./pages/Login.jsx";
 import { Register } from "./pages/Register.jsx";
-import { CarFilterProvider } from "./context/CarsFilterContext.jsx";
+// import { CarFilterProvider } from "./context/CarsFilterContext.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -14,11 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/cars",
-    element: (
-      <CarFilterProvider>
-        <Cars />
-      </CarFilterProvider>
-    ),
+    element: <Cars />,
   },
   {
     path: "/register",
