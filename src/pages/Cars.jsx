@@ -1,7 +1,11 @@
 import React from "react";
-import "../style/cars.css";
-import { CarsLayout } from "../components/Layout/CarsLayout";
+// import "../style/cars.css";
+// import { CarsLayout } from "../components/Layout/CarsLayout";
 
 export const Cars = () => {
-  return <CarsLayout />;
+  return (
+    <>
+      <p>Hallo</p>
+    </>
+  );
 };
