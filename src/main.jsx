@@ -2,7 +2,6 @@ import "./index.css";
 import React from "react";
 import { Cars } from "./pages/Cars.jsx";
 import { Home } from "./pages/Home.jsx";
-import ReactDOM from "react-dom/client";
 import { Login } from "./pages/Login.jsx";
 import { Register } from "./pages/Register.jsx";
 import { CarFilterProvider } from "./context/CarsFilterContext.jsx";
