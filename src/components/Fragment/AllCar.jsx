@@ -1,11 +1,11 @@
 import { CardCar } from "./CardCar";
-import cars from "../../assets/data/cars.json";
+import data from "../../assets/data/data.json";
 import React, { useEffect, useState } from "react";
 import { useCarFilter } from "../../context/CarsFilterContext";
 
 export const AllCar = () => {
   const { passengerFilter, filterTrigger, resetFilterTrigger } = useCarFilter();
-  const [filteredCars, setFilteredCars] = useState(cars);
+  const [filteredCars, setFilteredCars] = useState(data);
 
   const handleRupiah = (number) => {
     return new Intl.NumberFormat("id-ID", {
@@ -16,7 +16,7 @@ export const AllCar = () => {
 
   useEffect(() => {
     if (filterTrigger) {
-      const filtered = cars.filter((car) => {
+      const filtered = data.filter((car) => {
         if (passengerFilter === "") return true;
         return car.capacity >= parseInt(passengerFilter, 10);
       });

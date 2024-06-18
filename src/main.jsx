@@ -5,6 +5,7 @@ import { Login } from "./pages/Login.jsx";
 import { Register } from "./pages/Register.jsx";
 import { CarFilterProvider } from "./context/CarsFilterContext.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Cars } from "./pages/Cars.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/cars",
-    element: <p>Hello World</p>,
+    element: <Cars />,
   },
   {
     path: "/register",
