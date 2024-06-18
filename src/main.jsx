@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Cars } from "./pages/Cars.jsx";
-import { Home } from "./pages/Home.jsx";
-import { Login } from "./pages/Login.jsx";
-import { Register } from "./pages/Register.jsx";
-import { CarFilterProvider } from "./context/CarsFilterContext.jsx";
+import App from "./App.jsx";
+import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Home } from "./pages/Home.jsx";
+import { Cars } from "./pages/Cars.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,20 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/cars",
-
-    element: (
-      <CarFilterProvider>
-        <Cars />
-      </CarFilterProvider>
-    ),
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
+    element: <Cars />,
   },
 ]);
 
