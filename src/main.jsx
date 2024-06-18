@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Cars } from "./pages/Cars.jsx";
 import { Home } from "./pages/Home.jsx";
 import { Login } from "./pages/Login.jsx";
 import { Register } from "./pages/Register.jsx";
 import { CarFilterProvider } from "./context/CarsFilterContext.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Cars } from "./pages/Cars.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/cars",
-    element: <Cars />,
+
+    element: (
+      <CarFilterProvider>
+        <Cars />
+      </CarFilterProvider>
+    ),
   },
   {
     path: "/register",
@@ -28,8 +33,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <CarFilterProvider>
-      <RouterProvider router={router} />
-    </CarFilterProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
