@@ -8,11 +8,11 @@ import { Cars } from "./pages/Cars.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <p>Hello</p>,
   },
   {
-    path: "/car",
-    element: <Cars />,
+    path: "/cars",
+    element: <p>Hello</p>,
   },
 ]);
 
