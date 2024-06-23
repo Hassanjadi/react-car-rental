@@ -87,7 +87,7 @@ export const NavigationBar = () => {
                     Why Us
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item ">
                   <a
                     className={`nav-link ${
                       activeLink === "testimonial" ? "active" : ""
@@ -97,7 +97,7 @@ export const NavigationBar = () => {
                     Testimonial
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item me-4">
                   <a
                     className={`nav-link ${
                       activeLink === "faq" ? "active" : ""
@@ -107,7 +107,7 @@ export const NavigationBar = () => {
                     FAQ
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="auth d-flex gap-3">
                   <Link
                     to="/login"
                     className="register text-decoration-none"
@@ -115,8 +115,6 @@ export const NavigationBar = () => {
                   >
                     Login
                   </Link>
-                </li>
-                <li className="nav-item">
                   <Link
                     to="/register"
                     className="register text-decoration-none"
