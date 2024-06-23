@@ -4,7 +4,7 @@ import iconPrice from "../../assets/images/home/icon_price.png";
 import iconComplete from "../../assets/images/home/icon_complete.png";
 import iconProfesional from "../../assets/images/home/icon_professional.png";
 
-const WhyUs = () => {
+export const WhyUs = () => {
   return (
     <div id="whyus" className="why-us">
       <div className="container">

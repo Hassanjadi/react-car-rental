@@ -1,6 +1,7 @@
 import React from "react";
 import { Faq } from "../Fragment/Faq";
 import { Hero } from "../Fragment/Hero";
+import { WhyUs } from "../Fragment/WhyUs";
 import { Footer } from "../Fragment/Footer";
 import { Service } from "../Fragment/Service";
 import { CtaBanner } from "../Fragment/CtaBanner";
@@ -13,6 +14,7 @@ export const HomeLayout = () => {
       <NavigationBar />
       <Hero />
       <Service />
+      <WhyUs />
       <Testimonial />
       <Faq />
       <CtaBanner />

@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react";
 import logo from "../../assets/images/home/logo.png";
 
 export const NavigationBar = () => {
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      console.log("Current Section: ", currentSection); // Debug log
+      setActiveLink(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header id="header" className="header fixed-top">
       <nav className="navbar navbar-expand-lg bg-transparent">
@@ -22,7 +48,6 @@ export const NavigationBar = () => {
               <FeatherIcon icon="menu" size="20" />
             </span>
           </button>
-
           <div
             className="sidebar offcanvas offcanvas-end"
             id="offcanvasNavbar"
@@ -39,12 +64,13 @@ export const NavigationBar = () => {
                 aria-label="Close"
               ></button>
             </div>
-
             <div className="offcanvas-body py-0">
               <ul className="navbar-nav justify-content-end flex-grow-1">
                 <li className="nav-item">
                   <a
-                    className="nav-link active"
+                    className={`nav-link ${
+                      activeLink === "service" ? "active" : ""
+                    }`}
                     aria-current="page"
                     href="#service"
                   >
@@ -52,17 +78,32 @@ export const NavigationBar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#whyus">
+                  <a
+                    className={`nav-link ${
+                      activeLink === "whyus" ? "active" : ""
+                    }`}
+                    href="#whyus"
+                  >
                     Why Us
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#testimonial">
+                  <a
+                    className={`nav-link ${
+                      activeLink === "testimonial" ? "active" : ""
+                    }`}
+                    href="#testimonial"
+                  >
                     Testimonial
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#faq">
+                  <a
+                    className={`nav-link ${
+                      activeLink === "faq" ? "active" : ""
+                    }`}
+                    href="#faq"
+                  >
                     FAQ
                   </a>
                 </li>

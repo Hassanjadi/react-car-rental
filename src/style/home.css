@@ -5,6 +5,10 @@
   --neutral: #151515;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Helvetica";
   margin: 0;
