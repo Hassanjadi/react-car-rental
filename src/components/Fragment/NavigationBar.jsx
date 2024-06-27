@@ -32,7 +32,7 @@ export const NavigationBar = () => {
 
   return (
     <header id="header" className="header fixed-top">
-      <nav className="navbar navbar-expand-lg bg-transparent">
+      <nav className="navbar navbar-expand-lg">
         <div className="container">
           <Link to="/" className="navbar-brand">
             <img src={logo} alt="Logos" />

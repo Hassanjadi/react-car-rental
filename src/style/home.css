@@ -16,8 +16,9 @@ body {
 }
 
 /* Header */
-.header {
-  margin: 16px 0 16px 0;
+.navbar {
+  padding: 16px 0 16px 0;
+  background-color: var(--limegreen01);
 }
 
 .header .navbar-brand {
@@ -525,118 +526,3 @@ body {
 }
 
 /* End Footer */
-
-/* Cars CSS */
-:root {
-  --primary: #0d28a6;
-  --limegreen: #5cb85f;
-  --limegreen01: #f1f3ff;
-  --neutral: #151515;
-}
-
-body {
-  font-family: "Helvetica";
-  margin: 0;
-  padding: 0;
-}
-
-/* Header */
-.header {
-  margin: 16px 0 16px 0;
-}
-
-.header .navbar-brand {
-  width: 100px;
-  height: 34px;
-  background-color: var(--primary);
-}
-
-.header .register {
-  background-color: var(--limegreen);
-  font-size: 14px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border: 0;
-  border-radius: 2px;
-  color: #ffffff;
-  margin: 0;
-}
-
-@media (max-width: 991px) {
-  .sidebar {
-    max-width: 50%;
-    backdrop-filter: blur(20px);
-  }
-
-  .register {
-    display: flex;
-    padding: 8px 12px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .navbar-toggler-icon {
-    background: #222222;
-  }
-}
-
-.header .nav-link {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.active {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-/* Hero Section */
-.hero {
-  background-color: var(--limegreen01);
-  padding-top: 100px;
-  position: relative;
-}
-
-.hero h1 {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 54px;
-}
-
-.hero p {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-}
-
-.hero button {
-  border: 0;
-  width: 140px;
-  height: 36px;
-  font-size: 14px;
-  color: #ffffff;
-  padding: 8px 12px;
-  background-color: var(--limegreen);
-}
-
-.hero-img {
-  margin-top: 250px;
-}
-
-@media (min-width: 991px) {
-  .hero {
-    background-color: var(--limegreen01);
-    padding-top: 72px;
-    position: relative;
-    height: 500px;
-  }
-
-  .hero-desc {
-    height: 428px;
-    display: flex;
-    align-items: center;
-  }
-}
-
-/* End Hero */
