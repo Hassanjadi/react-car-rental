@@ -1,9 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export const CtaBanner = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
+
   return (
-    <section id="cta" className="cta">
+    <motion.section
+      id="cta"
+      className="cta"
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      ref={ref}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -22,6 +35,6 @@ export const CtaBanner = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

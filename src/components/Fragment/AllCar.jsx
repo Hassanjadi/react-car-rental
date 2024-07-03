@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
+import { useCarFilter } from "../../context/CarsFilterContext";
 import { CardCar } from "./CardCar";
 import cars from "../../assets/data/cars.json";
 import React, { useEffect, useState } from "react";
-import { useCarFilter } from "../../context/CarsFilterContext";
 
 export const AllCar = () => {
   const { passengerFilter, filterTrigger, resetFilterTrigger } = useCarFilter();
@@ -25,26 +26,52 @@ export const AllCar = () => {
     }
   }, [filterTrigger, passengerFilter, resetFilterTrigger]);
 
+  const containerVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <section id="all-cars" className="all-cars">
       <div className="container-md">
-        <div className="cars">
+        <motion.div
+          className="cars"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {filteredCars.map((item) => (
-            <CardCar key={item.id}>
-              <CardCar.Header image={item.image} />
-              <CardCar.Body
-                name={item.manufacture}
-                type={item.type}
-                price={handleRupiah(item.rentPerDay)}
-                description={item.description}
-                capacity={item.capacity}
-                transmission={item.transmission}
-                year={item.year}
-              />
-              <CardCar.Footer />
-            </CardCar>
+            <motion.div
+              key={item.id}
+              variants={cardVariants}
+              transition={{ duration: 0.5 }}
+            >
+              <CardCar>
+                <CardCar.Header image={item.image} />
+                <CardCar.Body
+                  name={item.manufacture}
+                  type={item.type}
+                  price={handleRupiah(item.rentPerDay)}
+                  description={item.description}
+                  capacity={item.capacity}
+                  transmission={item.transmission}
+                  year={item.year}
+                />
+                <CardCar.Footer />
+              </CardCar>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import FeatherIcon from "feather-icons-react";
 import logo from "../../assets/images/home/logo.png";
 
@@ -19,7 +20,6 @@ export const NavigationBar = () => {
         }
       });
 
-      console.log("Current Section: ", currentSection); // Debug log
       setActiveLink(currentSection);
     };
 
@@ -31,11 +31,23 @@ export const NavigationBar = () => {
   }, []);
 
   return (
-    <header id="header" className="header fixed-top">
+    <motion.header
+      id="header"
+      className="header fixed-top"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <Link to="/" className="navbar-brand">
-            <img src={logo} alt="Logos" />
+            <motion.img
+              src={logo}
+              alt="Logos"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            />
           </Link>
           <button
             className="navbar-toggler shadow-none border-0 p-0"
@@ -66,48 +78,31 @@ export const NavigationBar = () => {
             </div>
             <div className="offcanvas-body py-0">
               <ul className="navbar-nav justify-content-end flex-grow-1">
-                <li className="nav-item">
-                  <a
-                    className={`nav-link ${
-                      activeLink === "service" ? "active" : ""
-                    }`}
-                    aria-current="page"
-                    href="#service"
+                {["service", "whyus", "testimonial", "faq"].map((section) => (
+                  <motion.li
+                    key={section}
+                    className="nav-item"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
                   >
-                    Our Service
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className={`nav-link ${
-                      activeLink === "whyus" ? "active" : ""
-                    }`}
-                    href="#whyus"
-                  >
-                    Why Us
-                  </a>
-                </li>
-                <li className="nav-item ">
-                  <a
-                    className={`nav-link ${
-                      activeLink === "testimonial" ? "active" : ""
-                    }`}
-                    href="#testimonial"
-                  >
-                    Testimonial
-                  </a>
-                </li>
-                <li className="nav-item me-4">
-                  <a
-                    className={`nav-link ${
-                      activeLink === "faq" ? "active" : ""
-                    }`}
-                    href="#faq"
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li className="auth d-flex gap-3">
+                    <a
+                      className={`nav-link ${
+                        activeLink === section ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      href={`#${section}`}
+                    >
+                      {section.charAt(0).toUpperCase() + section.slice(1)}
+                    </a>
+                  </motion.li>
+                ))}
+                <motion.li
+                  className="auth d-flex gap-3"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                >
                   <Link
                     to="/login"
                     className="register text-decoration-none"
@@ -122,12 +117,12 @@ export const NavigationBar = () => {
                   >
                     Register
                   </Link>
-                </li>
+                </motion.li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };

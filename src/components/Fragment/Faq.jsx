@@ -1,15 +1,26 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export const Faq = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
+
   return (
-    <section id="faq" className="faq">
+    <section id="faq" className="faq" ref={ref}>
       <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-lg-5 d-flex flex-column align-items-lg-start">
-            <div className="section-title">
+            <motion.div
+              className="section-title"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <h2>Frequently Asked Questions</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
+            </motion.div>
           </div>
           <div className="col-lg-7">
             <div className="accordion" id="accordionExample">
