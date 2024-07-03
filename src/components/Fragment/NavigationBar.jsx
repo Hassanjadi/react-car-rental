@@ -81,7 +81,7 @@ export const NavigationBar = () => {
                 {["service", "whyus", "testimonial", "faq"].map((section) => (
                   <motion.li
                     key={section}
-                    className="nav-item"
+                    className="nav-item me-3"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
