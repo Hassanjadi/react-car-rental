@@ -1,6 +1,6 @@
 import { CardCar } from "./CardCar";
 import cars from "../../assets/data/cars.json";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useCarFilter } from "../../context/CarsFilterContext";
 
 export const AllCar = () => {
@@ -41,7 +41,7 @@ export const AllCar = () => {
                 transmission={item.transmission}
                 year={item.year}
               />
-              <CardCar.Footer />
+              <CardCar.Footer id={item.id} />
             </CardCar>
           ))}
         </div>

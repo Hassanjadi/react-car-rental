@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react";
 
 export const CardCar = (props) => {
@@ -55,8 +56,13 @@ const Body = (props) => {
   );
 };
 
-const Footer = () => {
-  return <button>Pilih Mobil</button>;
+const Footer = (props) => {
+  const { id } = props;
+  return (
+    <Link to={`/cars/${id}`} className="button">
+      Pilih Mobil
+    </Link>
+  );
 };
 
 CardCar.Header = Header;

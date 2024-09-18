@@ -185,6 +185,7 @@
     cursor: not-allowed;
   }
 }
+
 /* End Search Bar */
 
 /* All Cars */
@@ -329,4 +330,5 @@
     object-fit: cover;
   }
 }
+
 /* End All Cars */
