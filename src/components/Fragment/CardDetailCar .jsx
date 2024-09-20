@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Cars from "../../assets/data/cars.json";
 import FeatherIcon from "feather-icons-react";
 
@@ -42,7 +42,7 @@ export const CardDetailCar = () => {
         <div className="mt-5 detail-card-footer">
           <div className="d-flex justify-content-between">
             <p>Total</p>
-            <p className="fw-bold">Rp. 450.000</p>
+            <p className="fw-bold">{car.price}</p>
           </div>
           <button type="submit">Lanjutkan Pembayaran</button>
         </div>

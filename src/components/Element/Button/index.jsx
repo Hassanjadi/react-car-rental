@@ -8,12 +8,12 @@ export const Button = (props) => {
     type = "button",
   } = props;
   return (
-    <button
+    <Button
       className={`h-10 px-6 ${classname}`}
       type={type}
       onClick={() => onClick()}
     >
       {children}
-    </button>
+    </Button>
   );
 };
